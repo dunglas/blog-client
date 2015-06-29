@@ -14,7 +14,7 @@
 
     <header>
         Date: {{ post.datePublished | date:'medium' }}
-        <span ng-if="post.isFamilyFriendly"> - <b>NSFW</b></span>
+        <span ng-hide="post.isFamilyFriendly"> - <b>NSFW</b></span>
     </header>
 
     <p>{{ post.articleBody }}</p>
